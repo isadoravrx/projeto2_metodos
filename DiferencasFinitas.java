@@ -15,6 +15,7 @@ public class DiferencasFinitas{
     }
 
     public void formulaGregoryNewton(){
+        System.out.println("Equação polinomial de Gregory-Newton");
         double valorX0PorH = this.valores[0].getX()/this.h;
         String f = "P" + (this.valores.length - 1) + "(x) = " + this.valores[0].getY() + " + ";
         String z = "(x";

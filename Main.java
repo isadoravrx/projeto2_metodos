@@ -6,14 +6,12 @@ public class Main {
         for(int i = 0; i < conjX.length; i++){
             pares[i] = new Pair<Double>(conjX[i], conjY[i]);
         }
-
-        System.out.println("========== Interpolacao Linear ==========");
-        System.out.println(Methods.linearInterpolation(pares, 7));
-        System.out.println("========== Metodo de Lagrange ==========");
-        System.out.println(Methods.lagrange(pares, 7));
-        System.out.println("========== Diferencas Finitas ==========");
+        System.out.println("=+=+=+=+=+=+=+=+ Teste 1 =+=+=+=+=+=+=+=+");
+        System.out.println("X estimado: 7");
+        System.out.printf("Interpolação linear: %d\n", Methods.linearInterpolation(pares, 7));
+        System.out.printf("Método de Lagrange: %d\n", Methods.lagrange(pares, 7));
+        System.out.println("Método de Diferenças finitas:");
         System.out.println(Methods.diferencasFinitas(pares, 7));
-        
     }
 }
 

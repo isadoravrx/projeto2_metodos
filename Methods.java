@@ -19,8 +19,7 @@ public class Methods {
         return 0;
     }
     public static int lagrange(Pair<Double>[] valores, double x) {
-        polinomial_lagrange interpo = new polinomial_lagrange(valores);
+        Polinomial_lagrange interpo = new Polinomial_lagrange(valores);
         return interpo.interpolacao_lagrange(x);
-
     }
 }

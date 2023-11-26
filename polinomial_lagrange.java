@@ -1,7 +1,7 @@
-public class polinomial_lagrange {
+public class Polinomial_lagrange {
   Pair<Double> p[];
 
-  polinomial_lagrange(Pair<Double> p[]) {
+  Polinomial_lagrange(Pair<Double> p[]) {
     this. p = p;
   }
 

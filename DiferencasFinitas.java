@@ -19,7 +19,7 @@ public class DiferencasFinitas{
         double valorX0PorH = this.valores[0].getX()/this.h;
         String f = "P" + (this.valores.length - 1) + "(x) = " + this.valores[0].getY() + " + ";
         String z = "(x";
-        divisaoPorUm(z);
+         z = divisaoPorUm(z);
         if(valorX0PorH < 0){
             z += " + " + (valorX0PorH * -1) + ")";
         }
@@ -37,10 +37,11 @@ public class DiferencasFinitas{
         System.out.println(f);
     }
 
-    private void divisaoPorUm(String z){
+    private String divisaoPorUm(String z){
         if(h != 1){
             z += "/" + h;
         }
+        return z;
     }
 
     private String multiplicacao(int v, String z){
@@ -87,7 +88,7 @@ public class DiferencasFinitas{
         for(int i = 1; i < this.tabela.length; i++){
             res += (z * mult(i, z) * this.tabela[i][0])/fatorial(i);
         }
-        return Math.floor(res);
+        return res;
     }
 
     private double mult(int v, double z){

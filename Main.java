@@ -20,7 +20,7 @@ public class Main {
             System.out.printf("Interpolaçao linear: %d\n", Methods.linearInterpolation(pares_duplas, xestimado[i]));
             System.out.printf("Metodo de Lagrange: %d\n", Methods.lagrange(pares_trios, xestimado[i]));
             System.out.println("Tabela do metodo de Diferenças finitas:");
-            System.out.println(Methods.diferencasFinitas(pares_trios, xestimado[i]));
+            System.out.println("Interpolação com diferenças finitas: " + Methods.diferencasFinitas(pares_trios, xestimado[i]));
             System.out.println("Valor real: " + valoresReais[i]);
             System.out.println("=================================================================================");
         }

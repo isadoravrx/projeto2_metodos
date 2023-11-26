@@ -6,14 +6,6 @@ public class Main_DiferencasFinitas {
         for(int i = 0; i < conjX.length; i++){
             pares[i] = new Pair<Double>(conjX[i], conjY[i]);
         }
-        DiferencasFinitas d;
-        try {
-            d = new DiferencasFinitas(pares);
-            d.exibirTabela();
-            d.formulaGregoryNewton();
-            System.out.println(d.Px(-0.1));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 }
